@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose'
 import dotenv from 'dotenv';
-import postRoute from '../backend/routes/postRoute.js';
+import postRoute from './routes/postRoute.js';
 import authRoute from './routes/authRoute.js';
 import cookieParser from 'cookie-parser';
 import cors from 'cors'
@@ -55,9 +55,9 @@ server.use((err,req,res,next)=>{
 })
 
 
-
-server.listen(8081,()=>{
-console.log('connected to backend');
+const PORT = process.env.PORT || 5000;
+server.listen(PORT,()=>{
+console.log(`connected to backend on port ${PORT}`);
 connect()
 
 })
