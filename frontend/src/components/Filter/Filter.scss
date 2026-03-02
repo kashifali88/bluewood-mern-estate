@@ -1,0 +1,59 @@
+.filter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h1{
+        font-weight: 200;
+        font-size: 24px;
+
+        span{
+            font-weight: 600;
+        }
+    }
+    
+    .item{
+        display: flex;
+        flex-direction: column;
+        gap:2px;
+        label{
+           font-size: 11px; 
+        }
+        input,select{
+            width: 100px;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+    }
+    .top{
+        input{
+            width: 100%;
+            outline: none;
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            width: 60px;
+            height: 37px;
+            padding: 0px 20px;
+            border: none;
+            cursor: pointer;
+            background-color: #fece51;
+
+            img{
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+}
