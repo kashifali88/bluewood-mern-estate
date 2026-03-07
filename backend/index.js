@@ -26,7 +26,8 @@ const connect = async () => {
 
 //middlewares
 server.use(cors({
-  origin: "http://localhost:3000",  
+  origin: "https://bluewood-ecommerce-app.onrender.com"
+  ,  
   credentials: true, 
 }))
 server.use(express.json())
